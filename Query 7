@@ -1,0 +1,6 @@
+select d.departmentname, w.lastname || ' ' || w.firstname as "FULLNAME" from worker w 
+inner join dept d
+on w.departmentid = d.departmentid
+inner join assign a
+on w.empid = a.empid
+where a.projno = '1019';
