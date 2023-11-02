@@ -1,0 +1,5 @@
+select * from worker w
+inner join assign a
+on w.empid = a.empid
+where a.projno = '1040'
+order by w.lastname;
