@@ -1,0 +1,4 @@
+select count(a.projno)as "No. of projects" from assign a
+inner join allinformation b
+on a.projno = b.projno
+where a.empid = '103';
