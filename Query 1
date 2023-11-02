@@ -1,0 +1,4 @@
+select w.lastname || ' ' || w.firstname as "Fullname" from worker w
+inner join dept d
+on w.departmentid = d.departmentid
+where d.departmentname = 'Development' and w.salary > 30000;
