@@ -1,0 +1,7 @@
+select a.rating, w.lastname, w.firstname from worker w
+inner join assign a
+on w.empid = a.empid
+inner join project p 
+on w.empid = p.projmgrid
+where p.projmgrid = 
+(select empid from worker where lastname = 'Liu' and firstname = 'Jun-Min');
