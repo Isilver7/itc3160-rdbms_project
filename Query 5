@@ -1,0 +1,4 @@
+select * from worker w
+inner join dept d
+on w.departmentid = d.departmentid
+where d.departmentname = 'Development' and w.salary > (select avg(salary) from worker);
